@@ -1,0 +1,56 @@
+﻿
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            Student Portal
+        </a>
+    </div>
+</div>
+
+<input type="checkbox"
+       title="Navigation menu"
+       class="navbar-toggler" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="flex-column">
+
+        <!-- Home Navigation -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link"
+                     href=""
+                     Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill"
+                      aria-hidden="true"></span>
+                Home
+            </NavLink>
+        </div>
+
+        <!-- Counter Navigation -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="counter">
+                <span class="bi bi-plus-circle-fill"
+                      aria-hidden="true"></span>
+                Counter
+            </NavLink>
+        </div>
+
+        <!-- Weather Navigation -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="weather">
+                <span class="bi bi-cloud-sun-fill"
+                      aria-hidden="true"></span>
+                Weather
+            </NavLink>
+        </div>
+
+        <!-- Students Navigation -->
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="students">
+                <span class="bi bi-people-fill"
+                      aria-hidden="true"></span>
+                Students
+            </NavLink>
+        </div>
+
+    </nav>
+</div>

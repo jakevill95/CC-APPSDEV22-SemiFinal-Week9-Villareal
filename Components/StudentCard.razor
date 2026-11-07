@@ -1,0 +1,23 @@
+<div class="student-card">
+    <h3>@Firstname @Lastname</h3>
+    <p><strong>Course:</strong> @Course</p>
+    <p><strong>Year Level:</strong> @YearLevel</p>
+    <button @onclick="() => OnDetailClick.InvokeAsync(YearLevel)" class="btn btn-primary">View Details</button>
+</div>
+
+@code {
+    [Parameter]
+    public string Firstname { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Lastname { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Course { get; set; } = string.Empty;
+
+    [Parameter]
+    public int YearLevel { get; set; } 
+
+    [Parameter]
+    public EventCallback<int> OnDetailClick { get; set; }
+}
